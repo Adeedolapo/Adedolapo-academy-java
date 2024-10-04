@@ -1,14 +1,17 @@
-package com.bptn.course._02_scanner;
+package com.bptn.course._02_scan;
+
 import java.util.Scanner;
 
-public class FibonacciSeries {
+    public class Scan {
+
+
     public static void main(String[] args) {
 
         // Initialize the Scanner Object
-        Scanner scan = new Scanner(System.in)
+        Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter the number of elements: ");
-        int n = scan.nextInt()
+        int n = scan.nextInt();
         // Fetch the input from the user and store in the variable called n
         
 
@@ -25,6 +28,7 @@ public class FibonacciSeries {
            
         }
 
-        scanner.close();
+        scan.close();
     }
-}
+    }
+
