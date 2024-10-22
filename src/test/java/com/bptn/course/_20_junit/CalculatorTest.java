@@ -1,27 +1,22 @@
 package com.bptn.course._20_junit;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
-
 @TestInstance(Lifecycle.PER_CLASS)
 public class CalculatorTest {
-
 	Calculator calc;
 	
 	@BeforeAll
 	void initialize() {
-
 		/*
 		 * The methods with @BeforeAll are executed one time before all the
 		 * tests.
-		 * 
+		 *
 		 * For instance:
-		 * 
+		 *
 		 * Database connections.
 		 * Open a text file
 		 */
@@ -39,7 +34,6 @@ public class CalculatorTest {
 	
 	@Test
 	void testFindMax() {
-
 		/* 1,3,4,2 */
 		
 		
@@ -51,11 +45,9 @@ public class CalculatorTest {
 		
 		max = calc.findMax(new int[] {10,13,41,20});
 		expected = 41;
-
 		assertEquals(expected, max, "the output was incorrect");
 		
 	}
-
 	@Test
 	void testFindMaxNegative() {
 		
